@@ -1,0 +1,434 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* ----------------------------------HEADER------------------------------------ */
+
+#header{
+    background-color: #0a1b3f;
+    height: 90px + 43px;
+    color: white;
+}
+/* .top-bar{
+    height: 30px;
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+} */
+.header-main{
+    height: 90px;
+    background-color: white;
+}
+.header-main #masthead{
+    padding-top: 15px;
+    padding-left: 156px;
+    padding-right: 156px;
+    padding-bottom: 15px;
+
+
+}
+#masthead #logo img{
+    height: 61px;
+    max-width: 200px;
+    
+}
+#masthead #search{
+    float: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+#search .fas fa-search{
+    font-size: 25px;
+}
+form#search{
+    position: relative; 
+}
+form#search input{
+    width: 180px; 
+    height: 34px;
+    font-size: 15px;
+    background: rgba(0,0,0,.03);
+    color: #777777;
+    padding: 0px 42px 0px 12px;
+    border-radius: 99px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+form#search button{
+    background-color:#f7f7f7;
+    color:#777;
+    position: absolute;
+    border: none;
+    top: 20px;
+    right: 10px;  
+    outline: none;
+}
+form#search ::placeholder{
+    color:#777;
+    font-size: 13px;
+}
+
+ul#main-menu li a{
+    color: #cdcaca;
+    padding: 15px 15px;
+    margin-left: -5px;
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    line-height: 16px;
+
+}
+ul#main-menu li a:hover{
+    color: white;
+    padding: 15px 15px;
+    margin-left: -5px;
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;  
+}
+
+.header-bottom{
+    height: 43px;
+    background-color: #0a1b3f;
+    align-items: center;
+}
+.header-bottom .fa {
+    display: none;
+    
+}
+#main-menu{
+    display: flex;
+    padding-left: 350px;
+    padding-bottom: 350px;
+
+}
+.header-bottom ul{
+    list-style: none;   
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#main-menu li{
+    float: left;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: #014282;
+    color: #f7f7f7;
+    padding: 15px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #014282;
+    min-width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #f7f7f7;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+      background-color: #014282;
+      color: #f03e3e;
+      text-decoration: none;
+    }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color: #014282;
+  }
+
+
+/* -----------------------------------MAIN-------------------------------------- */
+.carousel-control-prev-icon {
+    background-image: url(../images/previous-32.png);
+    width: 32px;
+    height: 32px;
+}
+.carousel-control-next-icon {
+    background-image: url(../images/next-32.png);
+    width: 32px;
+    height: 32px;
+}
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+}
+#wp-main{
+    height: 100%;
+    padding: 0;
+    text-align: center;
+}
+
+.slide img {
+    float: left;
+    height: 500px;
+    width: 1350px;
+    background-image: rgba(255, 255, 255, 0.164);
+  }
+
+@-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: 1350px;}
+    /*  50% {margin-left: 1350px;}
+     60% {margin-left: -1350px;}
+    80% {margin-left: -1350px;} */
+}
+#wp-main #section-1 {
+    height: 500px;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* #wp-main #section-1::after {
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.773);
+    content: " ";
+    z-index: 1;
+} */
+
+#section-1 .content{
+    height: 500px;
+    padding-top:  150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom:  250px;
+    background: rgb(162 189 211 / 80%);
+}
+.content .icon-inner img{
+    height: 86px;
+    width: 27px;
+    padding-bottom: 10px;
+}
+.content h2{
+    font-size: 26px;
+    color: #10557f;
+}
+
+.content button{
+    height: 40px;
+    width: 136px;
+    background-color: #10a5b6;
+    color: white;
+    outline: none;
+    border-radius: 99px;
+    border: none 
+    
+}
+
+.content button:hover{
+    outline: none;
+    background-color: #2c838d;
+    
+
+}
+
+button .fas fa-angle-right {
+    font-size: 16px;
+}
+.content .fa-angle-right:before {
+    padding-right: 2px;
+    padding-left: 7px;
+}
+#section-2 .row{
+    height: 300px;
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#section-2 .row .col{
+    height: 260px;
+    width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+
+}
+
+#section-2 .row .col::before{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    top: 0;
+    left: -1px;
+    border-left: 1px dashed #ddd;
+}
+
+/* #section-2 .row ::after{
+    position: absolute;
+    content: " ";
+    height: 100%;
+    top: 0;
+    left: -1px;
+    border-left: 1px dashed #ddd;
+} */
+
+.icon-inner img{
+    width: 50px;
+    height: 50px;
+}
+
+.icon-box-img{
+    padding: 5px;
+    margin: 5px;
+}
+
+.icon-box-text h2{
+    color: #10557f;
+    font-size: 32px;
+    font-weight:700;
+}
+#wp-main #section-3 {
+    height: 500px;
+
+    background-image: url("../img/banner2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* #wp-main #section-3::after {
+    height: 500px;
+    background:rgba(236, 231, 231, 0.6);
+    content: " ";
+    z-index: 1;
+} */
+#section-3 .content{
+    height: 500px;
+    padding-top:  200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom:  250px;
+    background: rgb(0 0 0 / 50%);
+    color: white;
+}
+#section-3 .content h2{
+    color: white;
+}
+
+
+
+
+/* ---------------------------FOOTER--------------------------------- */
+#footer{
+    background-color: #0a1b3f;
+    height: 340px;
+    color: white;
+    font-size: 16px;
+}
+.footer-widgets{
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.footer-widgets .row {
+    display: flex;
+    justify-content: space-between; 
+    width: 1213px;
+}
+.footer-widgets .row .col{
+    height: 260px;
+    width: 430px;
+    padding-left: 10px;
+}
+.footer-widgets .row .col hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-color: white;
+}
+#col-inner h3{
+    margin: 0px 0px 20px;
+    font-size: 20px;
+}
+/* #col-inner .social-icons a{
+    width: 2px;
+    height: 2px;
+    border-radius: 99%;
+    padding-left: 5px;
+}
+.social-icons .icon-facebook {
+    background-color: #014282;
+    border-radius: 99%;
+    padding: 2px ;
+}
+.social-icons .icon-instagram {
+    background-color: #820157;
+    border-radius: 99%;
+    padding: 2px 5px 2px 5px;
+}
+.fab, .far {
+    font-weight: 200px;
+    font-size: small;
+    color: white;
+
+} */
+.bullet-arrow{
+    padding: 5px 0 5px 0;
+    display: flex;  
+}
+
+.bullet-arrow .fas fa-angle-right{
+    font-size: 16px;
+    font-family: "fl-icons";
+    left: 0px;
+    position: absolute;
+    font-size: 16px;
+    color: #7a9c59;
+
+}
+.fa-angle-right:before {
+    padding-right: 15px;
+}
+
+
+/* --------------COPYRIGHT--------------- */
+#copyright{
+    height: 48px;
+    background-color: #5b5b5b;
+}
+.copyright-footer{
+    padding: 15px 0px 15px 0px;
+    text-align: center;
+    font-size: 12px;
+}
+
